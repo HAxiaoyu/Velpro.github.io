@@ -9,7 +9,7 @@ int main(){
 	for(int i=0;i<m;i++)
 		for(int j=0;j<n;j++){
 			cin>>a[i][j];
-		}//ÊäÈë¾ØÕó 
+		}//è¾“å…¥çŸ©é˜µ 
 		
 	 
 	int row_min,row_min_col,col_max,row_min_row,flag=0;
@@ -20,8 +20,8 @@ int main(){
 		row_min_col = 0;
 		for(j=0;j<n;j++){
 			if(row_min > a[i][j]){
-					row_min = a[i][j];  // i = 0 1 2 3    //ÕÒµ½ĞĞ×îĞ¡ 
-				 	row_min_col =  j;    //ĞĞ×îĞ¡µÄËùÔÚÁĞ 
+					row_min = a[i][j];  // i = 0 1 2 3    //æ‰¾åˆ°è¡Œæœ€å° 
+				 	row_min_col =  j;    //è¡Œæœ€å°çš„æ‰€åœ¨åˆ— 
 				 	row_min_row = i;
 			}
 		}
@@ -37,7 +37,7 @@ int main(){
 		flag = 1;
 	}
 
-}  //´óÑ­»·½áÊø  
+}  //å¤§å¾ªç¯ç»“æŸ  
 	if(!flag)
 		cout<<"no"<<endl;
 	return 0;
