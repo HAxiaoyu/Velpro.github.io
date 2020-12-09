@@ -20,15 +20,15 @@ int main()
 			for (int j = 0; j < n; j++)
 			{
 				if (i == j)
-					sum3 += data[i][j]; //ÓÃsum3¼ÇÂ¼¶Ô½ÇÏßÔªËØµÄºÍ
-				    sum1 += data[i][j]; //ÓÃsum1¼ÇÂ¼Ã¿Ò»ÐÐÔªËØµÄºÍ
-				    sum2 += data[j][i]; //ÓÃsum2¼ÇÂ¼Ã¿Ò»ÁÐÔªËØµÄºÍ
+					sum3 += data[i][j]; //ç”¨sum3è®°å½•å¯¹è§’çº¿å…ƒç´ çš„å’Œ
+				    sum1 += data[i][j]; //ç”¨sum1è®°å½•æ¯ä¸€è¡Œå…ƒç´ çš„å’Œ
+				    sum2 += data[j][i]; //ç”¨sum2è®°å½•æ¯ä¸€åˆ—å…ƒç´ çš„å’Œ
 			}
 			a[k++] = sum1;
 			a[k++] = sum2;
 		}
 		a[k++] = sum3;
-		for (int i = 0; i < k; i++)      //Ã°ÅÝÅÅÐò
+		for (int i = 0; i < k; i++)      //å†’æ³¡æŽ’åº
 			for (int j = 0; j < k - 1 - i; j++)
 			{
 				if (a[j] < a[j + 1])
